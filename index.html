@@ -60,21 +60,85 @@
           <p>We troubleshoot and also fix all your Electrical problems.</p>
         </article>
       </section>
+                  <h3>Audio</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <address>
-          <p>
-            Email:
-            <a href="mariaelectricals30@gmail.com"
-              >mariaelectricals30@gmail.com</a
-            >
-          </p>
-          <p>Phone: +2348068834763</p>
-        </address>
-      </section>
+            <h3>Video</h3>
+            <video controls width="400">
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Section 4: HTML5 Form -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" placeholder="John Doe"><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+                    
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a strong password"><br><br>
+                    
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="Digits only"><br><br>
+                    
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <label for="color">Favorite Color:</label><br>
+                    <input type="color" id="color" name="color"><br><br>
+                    
+                    <label for="language">Preferred Language:</label><br>
+                    <select id="language" name="language" required>
+                        <option value="">--Select--</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </select><br><br>
+                    
+                    <p>Subscribe to newsletter?</p>
+                    <input type="radio" id="yes" name="subscribe" value="yes" required>
+                    <label for="yes">Yes</label>
+                    
+                    <input type="radio" id="no" name="subscribe" value="no">
+                    <label for="no">No</label><br><br>
+                </fieldset>
+
+                <!-- File Upload -->
+                <fieldset>
+                    <legend>Upload</legend>
+                    <label for="profilepic">Upload Profile Picture:</label><br>
+                    <input type="file" id="profilepic" name="profilepic" accept="image/*"><br><br>
+                </fieldset>
+
+                <!-- Submit -->
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+
+
+         </main>
 
     <!-- Page Footer -->
     <footer>
@@ -82,3 +146,4 @@
     </footer>
   </body>
 </html>
+
